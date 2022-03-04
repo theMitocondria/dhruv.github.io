@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    
+    <style>
+        body{
+            background-color: beige;
+            padding: 10PX;
+            margin: 10PX;
+        }
+        h2{
+            text-align: center;
+            background-color: aquamarine;
+            color: black;
+        }
+        #n{
+            font-style: initial;
+        }
+        .f{
+            font-size: larger;
+            background-color: antiquewhite;
+            font-style: oblique;
+        }
+        #imp{
+            border: 4px solid rgb(157, 206, 68);
+            border-radius: 6px;
+        }
+        .class{
+            background-color: transparent;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Form for gym membership </h2>
+    <hr>
+    <form action="backend.php">
+        <div id="imp"  class="cs">
+            <div >
+            <p id="n" class="f"> NAME : <input type="text" name="myname"> </p>
+        </div>
+        <br>
+        <div class="cs" >
+         <p class="f">
+             Age: <input type="number" name="mynum">
+         </p>
+        </div class="cs">
+        <br>
+        <div >
+        <p  class="f"> DATE OF BIRTH:<input type="date" name="myDOB"> </p>
+        </div>
+        <br>
+        <div  class="cs">
+           <p class="f"> GENDER:MALE:<input type="radio" name="MYGENDER">
+            FEMALE:<input type="radio" name="MYGENDER">
+            OTHERS:<input type="radio" name="MYGENDER"> </p> 
+        </div>
+        <br>
+        <div class="cs" >
+             <p class="f">  WANT TO :LOOSE WEIGHT :<input type="radio" name="MYH0BBIES">
+                MAINTAIN FITNESS:<input type="radio" name="MYH0BBIES">
+                GAIN WEIGHT:<input type="text" name="MYH0BBIES"> </p>
+        </div>
+        <br>
+        <div  class="cs">
+            <p class="f">  WHAT IS YOUR BUDGET PER MONTH :1000 Rs:<input type="radio" name="MYH0BBIES">
+               1000-2000Rs:<input type="radio" name="MYH0BBIES">
+               KHOOB PAISA HAI:<input type="text" name="MYH0BBIES"> </p>
+       </div>
+       <br>
+        
+        <div class="cs">
+             <p class="f">
+                WHERE DO YOU COME TO KNOW ABOUT US : <br><textarea name="VIEWS"  cols="30" rows="10"></textarea>
+             </p>
+        </div>
+        <br> 
+        <label for="T&C">Read terms and condition</label>
+          <p class="f"> <input type="checkbox" id="eligility" name="MYeligibility" checked> </p>
+        <br>
+        <div class="cs">
+            <input type="reset" name="reset">
+            <input type="submit" name="submit now">
+        </div>
+        <br>
+        </div>
+    </form>
+
+</body>
+
+</html>
